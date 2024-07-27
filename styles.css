@@ -1,0 +1,26 @@
+body {
+    background-image: url("img/sakura.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.backdrop {
+    text-align: center;
+    background-color: white;
+    border-radius: 50px;
+    width: auto;
+    height: auto;
+    padding: 19.5vw 12vw;
+    margin: 1vw 1vw;
+    /*adjust margins and padding maybe later*/
+}
+
+.border-box {
+    width: 90%;
+    height: 90%;
+    border: 5px salmon;
+    border-radius: 25px;
+    padding: 10px;
+    margin: 10px;
+}
