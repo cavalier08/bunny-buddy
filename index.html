@@ -7,54 +7,127 @@
     <title>Bunny Buddy</title>
 
     <link href="styles.css" rel="stylesheet">
-    <script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/healthbar.js"></script>
+    <!--
+    <script src="garbage/script.js" defer></script>
+-->
+    <script src="js/healthbar.js"></script>
+    <script src="js/inventory.js" defer></script>
 
-    </script>
+
+
 </head>
 
 <body>
     <!--white box background with border-->
     <div class="backdrop">
         <p></p>
+        <!-- Money Counter -->
+        
 
-        <div class="float-box">
-            <!--to do section-->
-            <div class="todo-box">
-                <h2>My To-Do List</h2>
-
-                <div id="todo" class="todo-box">
-                    <h2>To-Do List</h2>
-                    <p></p>
-                </div>
-
-                <div id="shop" class="todo-box">
-                    <h2>Shop</h2>
-                    <p></p>
-                </div>
-
-                <div id="inventory" class="todo-box">
-                    <h2>Inventory</h2>
-                    <p></p>
-                </div>
-
-            </div>
-
-            <!---->
-            <div class="bunny-buddy">
-                <h2>My Bunny Buddy</h2>
-            </div>
-
-
+            
+        <div id="tab-title">
+            <h1 class="raBit" id = "coin-total">0</h1>
         </div>
-
 
         <!--tabs-->
         <div class="tab">
-            <button class="tablinks" onclick="openTab(event, 'todo')">To-Do</button>
-            <button class="tablinks" onclick="openTab(event, 'shop')">Shop</button>
-            <button class="tablinks" onclick="openTab(event, 'inventory')">Inventory</button>
+                <a href="index.html"><button>To-Do</button></a>
+            <a href="shop.html"><button>Shop</button></a>
+            <a href="inventory.html"><button>Inventory</button></a>
+
+
+             
+            
         </div>
 
+       
+
+
+        <div class="float-box">
+            <!--
+                <div id="todo" class="float-box"></div>
+            <div id="shop" class="float-box"></div>
+            <div id="inventory" class="float-box"></div>
+            -->
+
+            <!--to do section-->
+            <div class="todo-box">
+                <h1 id="tab-title"> My To-Do List</h1>
+                <div class="input">
+                    <input type="text" class="text-input" id="todoInput" placeholder="Add New Task">
+                    <button class="add-bttn">ADD</button>
+                </div>
+                <ul class="scroll">
+                    <li id="todo-list"></li>
+                </ul>
+                <div>
+                    <hr class="counter-class">
+                    <div class="counter-contain">
+                        <p>Total Items: <span id="todoCount"> 0 </span></p>
+                        <button id="delete-button">DELETE ALL</button>
+                    </div>
+                </div>
+            </div>
+            <!---->
+
+            <!--Bunny Image-->
+            <div class="bunny-buddy">
+                <h2>My Bunny Buddy</h2>
+                <!-- <div class = "bunnyAnime"> kinda useless-->
+
+                <img class="bunny" src="img/normBunny.PNG" />
+
+                <!--health bar-->
+                <h3 id="health-amount123"> HEALTH: </h3>
+                <!-- this is just added PROGRESS BAR --> 
+                <div> 
+                    <progress id= "healthTest" value = "100" max = "100"> </progress> 
+                </div>
+
+                <div class="area">
+                    <div class="total"></div>
+
+                    <!--
+
+                    
+                    <div class="health-box">
+                        <div id="health-amount2" class="health-bar"></div>
+                        
+                    </div>
+-->
+                    <div>
+
+                        <button onclick="startButton()">
+                            start
+                        </button>
+                       <!-- <h1>
+                            health:
+                        </h1>
+                            -->
+                        
+                        <!-- <h1 id="health-stat">80</h1> -->
+    
+                        <div class="healthbar-box">
+                            
+                            
+
+                    </div>
+                    
+
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+
+
+        </div>
 
     </div>
 
