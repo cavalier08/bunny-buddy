@@ -6,19 +6,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bunny Buddy</title>
 
-    <link href="shop.css" rel="stylesheet">
-    <script>
-        src = "js/inventory.js"
+    <link href="styles.css" rel="stylesheet">
+    <script src="js/inventory.js">
     </script>
+
 
 </head>
 
 <body>
 
+    <div class="stat-box">
+        <button onclick="location.href = 'index.html'" class="stat-button">Home</button>
+
+        <div class="second-stat-box">
+            <h3 class="stat">
+                Balance
+            </h3>
+            <h3 id="coin-total" class="stat">
+                100
+            </h3>
+
+        </div>
+
+        <button onclick="location.href='inventory.html'" class="stat-button">Inventory</button>
+
+
+    </div>
+
     <div class="welcome-box">
         <h1 class="welcome-message">
             Welcome to the inventory!
         </h1>
+
+    </div>
+
+    <div class="instruction-box">
+        <h4 class="instruction">
+            Click on any item to equip your bunny!
+        </h4>
 
     </div>
     <div class="shop-box">
@@ -129,9 +154,9 @@
             <img class="item-image" src="img/brown-square.png" />
             <div class="item-description">
                 <h3>
-                    Fur-lined Coat
+                    Crown
                 </h3>
-                <p id="coat_num">hi
+                <p id="crown-num">hi
                 </p>
 
             </div>
